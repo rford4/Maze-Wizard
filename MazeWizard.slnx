@@ -1,0 +1,9 @@
+<Solution>
+  <Project Path="MazeWizard.AppServices/MazeWizard.AppServices.csproj" />
+  <Project Path="MazeWizard.Domain/MazeWizard.Domain.csproj" />
+  <Project Path="MazeWizard.Domain.Tests/MazeWizard.Domain.Tests.csproj" />
+  <Project Path="MazeWizard.DomainServices/MazeWizard.DomainServices.csproj" />
+  <Project Path="MazeWizard.Presentation.Tests/MazeWizard.Presentation.Tests.csproj" />
+  <Project Path="MazeWizard.Utilities/MazeWizard.Utilities.csproj" />
+  <Project Path="MazeWizard.Presentation/MazeWizard.Presentation.csproj" />
+</Solution>

@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "MazeWizard": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\Users\\Ryan\\source\\repos\\MazeWizard\\maze.png\r\nC:\\Users\\Ryan\\source\\repos\\MazeWizard\\solution.png\r\n--o"
+    }
+  }
+}
