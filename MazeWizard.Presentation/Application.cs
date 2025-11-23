@@ -21,7 +21,7 @@ internal class Application()
         if (sourceFile == null || destinationFile == null)
             return;
 
-        (var success, var errors) = MazeService.Solve(sourceFile.FullName, destinationFile.FullName);
+        (var success, var errors) = MazeService.SolveRectangularMaze(sourceFile.FullName, destinationFile.FullName);
 
         if(success == false)
             WriteErrors(errors);

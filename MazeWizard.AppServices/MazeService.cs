@@ -16,7 +16,7 @@ namespace MazeWizard.AppServices;
 public class MazeService()
 {
     /// <summary>
-    /// Solves a maze from an input image file and writes the solution to an output image file.
+    /// Solves a rectangular maze with orthogonal cells from an input image file and writes the solution to an output image file.
     /// </summary>
     /// <param name="sourceFilePath">The file path of the source maze image to solve.</param>
     /// <param name="destinationFilePath">The file path where the solved maze image will be saved.</param>
@@ -27,7 +27,7 @@ public class MazeService()
     /// <item><description><c>errors</c>: A collection of error messages describing why the maze could not be solved, if any.</description></item>
     /// </list>
     /// </returns>
-    public static (bool success, IEnumerable<string> errors) Solve(string sourceFilePath, string destinationFilePath)
+    public static (bool success, IEnumerable<string> errors) SolveRectangularMaze(string sourceFilePath, string destinationFilePath)
     {
         // TODO: This creates a dependency on the Windows runtime environment
         // Consider replacing with cross plaform library like ImageSharp: https://sixlabors.com/
@@ -58,7 +58,7 @@ public class MazeService()
         return (true, []);
     }
 
-    [Obsolete($"Use {nameof(Solve)} instead.")]
+    [Obsolete($"Use {nameof(SolveRectangularMaze)} instead.")]
     private void SolveWithPathfinder(string sourceFilePath, string destinationFilePath)
     {
         using var bitmap = new Bitmap(sourceFilePath);
