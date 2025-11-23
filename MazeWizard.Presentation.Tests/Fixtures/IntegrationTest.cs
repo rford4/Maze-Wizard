@@ -10,7 +10,7 @@ public class IntegrationTest
         var appFilePath = Path.GetFullPath(Path.Combine(
             AppContext.BaseDirectory,
              @"..\..\..\..",
-            "MazeWizard",
+            "MazeWizard.Presentation",
             "bin",
             "Debug",
             "net10.0-windows",
