@@ -14,7 +14,7 @@ public class IntegrationTest
             "bin",
             "Debug",
             "net10.0-windows",
-            "mazewizard.presentation.exe"));
+            "mazewizard.exe"));
 
         ProcessStartInfo processStartInfo = new()
         {

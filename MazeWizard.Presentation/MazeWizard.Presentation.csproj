@@ -17,4 +17,8 @@
     <ProjectReference Include="..\MazeWizard.DomainServices\MazeWizard.DomainServices.csproj" />
   </ItemGroup>
 
+  <PropertyGroup>
+    <AssemblyName>mazewizard</AssemblyName>
+  </PropertyGroup>
+	
 </Project>
