@@ -13,7 +13,8 @@ internal static class RootCommandFactory
                 + "• Entrance:\tred pixels\t(RGB 255, 0, 0)\r\n"
                 + "• Exit:\tblue pixels\t(RGB 0, 0, 255)\r\n"
                 + "• Walls:\tblack pixels\t(RGB 0, 0, 0)\r\n"
-                + "• Boundary:\tmaze must be fully surrounded by black walls"
+                + "\nThe maze must also be fully surrounded by black walls.\r\n"
+                + "\nThe solution to the maze, if found, will be painted in green."
         };
 
         output.Validators.Add(result =>
