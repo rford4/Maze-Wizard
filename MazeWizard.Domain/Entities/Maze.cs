@@ -213,12 +213,19 @@ public sealed class Maze
             return;
         }
 
+        // RF - Trims out the branches of a forked path that do not lead to the exit
         var pathSegmentsToExit = TrimUntraversedPathSegments(pathsToExit);
+
+        // RF - Trims out the entrance and exit boxes; so they aren't painted over
         pathSegmentsToExit = TrimEntranceAndExit(pathSegmentsToExit);
 
         _solution = pathSegmentsToExit;
     }
 
+    /// <summary>
+    /// Finds exit by recursively checking the entrance path's intersecting paths and in turn their 
+    /// intersecting paths. Exit is found if one of the intersecting paths is the exit.
+    /// </summary>
     private Stack<BoundingBox>? FindExit(BoundingBox currentPath, HashSet<BoundingBox> traversedPaths)
     {
         if (currentPath == _exitPath)
@@ -408,6 +415,9 @@ public sealed class Maze
         return true;
     }
 
+    /// <summary>
+    /// Determines the boundaries of the two possible paths that can be derived from a corner
+    /// </summary>
     private List<BoundingBox> BuildPathSegmentsFromCorner(Point cornerPoint, CornerType cornerType)
     {
         var output = new List<BoundingBox>();
