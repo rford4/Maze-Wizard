@@ -1,6 +1,6 @@
 # MazeWizard
 
-Console app that solves rectangular mazes with orthogonal (square cell) pathways.
+.NET 10 Console app that solves rectangular mazes with orthogonal (square cell) pathways.
 
 The maze must follow these pixel-color rules:
 - Entrance:    red pixels      (RGB 255, 0, 0)
